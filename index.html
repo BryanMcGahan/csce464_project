@@ -1,38 +1,37 @@
 <!--#include virtual="common/document_head.html"-->
-<link rel="stylesheet" type="" href="styles/main.css">
-<title>Mastery</title>
-
+<link rel="stylesheet" href="styles/main.css">
 <body>
-	<main>
-		<header>
-			<nav id="nav-bar">
-				<div id="subjects-menu">
-					<button id="subjects-button" onclick="show_or_close_menu()">
-						<p>Subjects</p>
-						<span>
-							<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24">
-								<path d="M480 711 240 471l56-56 184 184 184-184 56 56-240 240Z" />
-							</svg>
-						</span>
-					</button>
-					<div id="subjects-list">
-						<a href="" class="subject-link">Coding</a>
-						<a href="" class="subject-link">Coding</a>
+	<header>
+		<nav id="nav-bar">
+			<div id="subjects-menu">
+				<button id="subjects-button" onclick="show_or_close_menu()">
+					<p id="subject-title">Subjects</p>
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24">
+							<path d="M480 711 240 471l56-56 184 184 184-184 56 56-240 240Z" />
+						</svg>
+					</span>
+				</button>
+				<div id="subjects-list">
+					<div>
 						<a href="" class="subject-link">Coding</a>
 					</div>
+					<a href="" class="subject-link">Math</a>
+					<a href="" class="subject-link">Biology</a>
 				</div>
-				<div>
-					<a href="index.html">
-						<p id="brand">Mastery</p>
-					</a>
-				</div>
-			</nav>
-			<script src="scripts/subjects_button.js"></script>
-		</header>
-		<footer>
-			<a href="pages/feedback.html">Leave me some feedback</a>
-		</footer>
-	</main>
+			</div>
+			<div>
+				<a href="index.html">
+					<p id="brand">MasterIt!</p>
+				</a>
+			</div>
+			<div>
+				<p>Placeholder user menu</p>
+			</div>
+		</nav>
+	</header>
+	<footer id="footer">
+		<a href="pages/feedback.html">Leave me some feedback</a>
+	</footer>
 </body>
-
-</html>
+<script src="scripts/subjects_button.js"></script>
