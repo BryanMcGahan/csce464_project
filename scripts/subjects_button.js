@@ -1,4 +1,4 @@
-let menu_open = 1;
+let menu_open = 0;
 let menu = document.getElementById("subjects-list");
 
 function show_or_close_menu() {
