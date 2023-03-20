@@ -32,3 +32,8 @@ a{
 a:hover{
 	cursor:pointer;
 }
+
+.dark-mode{
+	background-color: #242424;
+	color: #f0f0f0;
+}
