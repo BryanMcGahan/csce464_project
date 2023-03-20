@@ -1,0 +1,119 @@
+#nav-bar{
+	padding: 1rem 3rem 1rem 3rem;
+}
+.nav-items{
+	display: flex;
+	flex-direction: row;
+	justify-content:center; 
+	align-items: center;
+	
+}
+#profile-button{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: end;
+}
+
+.avatar{
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	vertical-align: middle;
+	position: relative;
+}
+
+#profile-menu{
+
+	position: absolute;
+	right: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+#profile-menu:hover #profile-list{
+	display: flex;
+}
+
+#profile-list{
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	align-items: end;
+	width: 100%;
+	padding-top: 28px;
+	border: 1px #512DA8;
+	z-index: 1;
+	
+}
+
+#subjects-menu{
+	position: absolute;
+	left: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+#subjects-list{
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	align-items: start;
+	width: 100%;
+	padding-top: 28px;
+	z-index: 1;
+	
+}
+
+#subjects-menu:hover #subjects-list{
+	display: flex;
+}
+#subjects-button{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#school-icon{
+	fill: #512DA8;
+	margin-right: .5rem;
+}
+.list-icon{
+	fill: #512DA8;
+	margin-right: .5rem;
+}
+.list-link{
+	font-size: .75rem;
+	font-weight: 500;
+}
+
+.list-block{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 1px #512DA8;
+}
+
+.list-block:hover{
+	border-radius:.5rem;
+	border: 1px #512DA8;
+}
+#subject-title{
+	font-size: 1rem;
+	font-weight: 600;
+}
+#brand{
+	font-size: 2rem;
+	font-weight: bold;
+}
+#brand-accent{
+	color: #512DA8;
+}
+.dark-mode p{
+	color: white;
+}
+.dark-mode a{
+	color: white;
+}
