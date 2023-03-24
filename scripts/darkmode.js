@@ -3,7 +3,7 @@ let currentMode = sessionStorage.getItem("dark-mode");
 var body = document.body;
 
 console.log(currentMode);
-if (currentMode === "false") {
+if ((currentMode === "false") || (currentMode === null)) {
 	currentMode = "light";
 }
 
@@ -12,14 +12,14 @@ if(currentMode === "dark"){
 }
 
 
-
 function toggle_darkmode() {
 	body.classList.toggle('dark-mode')
 	if (currentMode === "light") {
-		currentMode = "dark"
+		currentMode = "dark";
 	} else if (currentMode === "dark") {
-		currentMode = "light"
+		currentMode = "light";
+	}else{
+		currentMode = "light";
 	}
-	console.log(currentMode);
 	sessionStorage.setItem('dark-mode', currentMode);
 }

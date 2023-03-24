@@ -16,8 +16,8 @@
 }
 
 .avatar{
-	height: 25px;
-	width: 25px;
+	height: 45px;
+	width: 45px;
 	border-radius: 50%;
 	vertical-align: middle;
 	position: relative;
@@ -30,6 +30,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: end;
+	border: 1px black;
 }
 
 #profile-menu:hover #profile-list{
@@ -42,10 +43,8 @@
 	flex-direction: column;
 	align-items: end;
 	width: 100%;
-	padding-top: 28px;
-	border: 1px #512DA8;
+	padding-top: 48px;
 	z-index: 1;
-	
 }
 
 #subjects-menu{
@@ -64,6 +63,7 @@
 	width: 100%;
 	padding-top: 28px;
 	z-index: 1;
+	border: 1px #512DA8;
 	
 }
 
@@ -93,7 +93,6 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	border: 1px #512DA8;
 }
 
 .list-block:hover{
@@ -107,6 +106,7 @@
 #brand{
 	font-size: 2rem;
 	font-weight: bold;
+	cursor: pointer;
 }
 #brand-accent{
 	color: #512DA8;

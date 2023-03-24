@@ -1,34 +1,32 @@
 <!--#include virtual="../common/document_head.html"-->
-<link rel="stylesheet"  href="styles/feedback_page.css">
 <!--#include virtual="../common/navbar.html"-->
-<body>
-	<main id="form-container">
-		<form id="feedbackForm">
-			<div class="form-group">
-				<label for="Email">Email</label>
-				<input type="text" name="email" placeholder="Please insert an email...">
+<link rel="stylesheet" href="styles/feedback_page.css">
+<main id="form-container">
+	<form id="feedbackForm">
+		<div class="form-group">
+			<label for="Email"><span>Email</span></label>
+			<input type="text" name="email" placeholder="Please insert an email...">
+		</div>
+		<div class="form-group">
+			<label for=""><span>Message</span></label>
+			<textarea name="message" rows="" cols="" placeholder="Tell me something interesting..."></textarea>
+		</div>
+		<div class="form-group">
+			<label for="rating-group"><span>Rating</span></label>
+			<div id="rating-group">
+				<input type="radio" name="rating" id="rating1" value="1">
+				<label for="rating1"><span>1</span></label>
+				<input type="radio" name="rating" id="rating2" value="2">
+				<label for="rating1"><span>2</span></label>
+				<input type="radio" name="rating" id="rating3" value="3">
+				<label for="rating1"><span>3</span></label>
+				<input type="radio" name="rating" id="rating4" value="4">
+				<label for="rating1"><span>4</span></label>
+				<input type="radio" name="rating" id="rating5" value="5">
+				<label for="rating1"><span>5</span></label>
 			</div>
-			<div class="form-group">
-				<label for="">Message</label>
-				<textarea name="message" rows="" cols="" placeholder="Tell me something interesting..."></textarea>
-			</div>
-			<div class="form-group">
-				<label for="rating-group">Rating</label>
-				<div id="rating-group">
-					<input type="radio" name="rating" id="rating1" value="1">
-					<label for="rating1">1</label>
-					<input type="radio" name="rating" id="rating2" value="2">
-					<label for="rating1">2</label>
-					<input type="radio" name="rating" id="rating3" value="3">
-					<label for="rating1">3</label>
-					<input type="radio" name="rating" id="rating4" value="4">
-					<label for="rating1">4</label>
-					<input type="radio" name="rating" id="rating5" value="5">
-					<label for="rating1">5</label>
-				</div>
-			</div>
-			<button type="button" onclick="validateForm()">Submit</button>
-		</form>
-		<script src="scripts/feedbackFormValidation.js"></script>
-	</main>
-</body>
+		</div>
+		<button type="button" onclick="validateForm()"><span>Submit</span></button>
+	</form>
+	<script src="scripts/feedbackFormValidation.js"></script>
+</main>
