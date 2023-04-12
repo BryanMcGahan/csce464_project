@@ -23,6 +23,22 @@
 	position: relative;
 }
 
+.hidden-avatar{
+	height: 24px;
+	width: 24px;
+	border-radius: 50%;
+	vertical-align: middle;
+	position: relative;
+	margin-right: .5rem;
+}
+
+#hidden-profile-button{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+}
+
 #profile-menu{
 
 	position: absolute;
@@ -64,7 +80,10 @@
 	padding-top: 28px;
 	z-index: 1;
 	border: 1px #512DA8;
-	
+}
+
+.menu-option{
+
 }
 
 #subjects-menu:hover #subjects-list{
@@ -99,7 +118,7 @@
 	border-radius:.5rem;
 	border: 1px #512DA8;
 }
-#subject-title{
+.menu-option{
 	font-size: 1rem;
 	font-weight: 600;
 }
@@ -108,12 +127,32 @@
 	font-weight: bold;
 	cursor: pointer;
 }
+
+#hidden-brand-container{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 #brand-accent{
 	color: #512DA8;
 }
-.dark-mode p{
-	color: white;
+
+
+@media only screen and (max-width: 900px) {
+	#subjects-menu{
+		display: none;
+	}
+	#profile-menu{
+		display: none;
+	}
+	#brand-container{
+		display: none;
+	}
+#hidden-brand-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-.dark-mode a{
-	color: white;
 }
