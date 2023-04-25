@@ -10,7 +10,8 @@ session_start();
     <script type="text/javascript">
 
 let request = null;
-function sendMessage(){
+function sendMessage(event){
+  event.preventDefault();
   request = new XMLHttpRequest();
   let message = document.getElementById('message').value;
   request.open("GET", "scripts/counter.php?message=" + message, false );
@@ -19,7 +20,9 @@ function sendMessage(){
 }
 
 function handleResponse(){
-  console.log("Message Received");
+  if(request.readyState == 4){
+    console.log(request);
+  }
 }
 
 
@@ -33,7 +36,9 @@ function getMessage(){
 
 function updatePage(){
   if (request.readyState == 4){
-    document.getElementById('message_count').innerHTML = request.responseText;
+    let split_message = request.responseText.split(',');
+    document.getElementById('message_count').innerHTML = split_message[0].trim();
+    document.getElementById('last_message').innerHTML = split_message[1].trim();
   }
 }
 
@@ -41,12 +46,13 @@ function updatePage(){
 </head>
   <main>
     <div>
-      <form onsubmit="sendMessage()">
+      <form onsubmit="sendMessage(event)">
         <input type="text" name="" id="message"> 
         <button type="submit" id="submit_btn" >Send Message</button>
       </form>
-      <div>
+      <div id="message_block">
         <p id="response">Total Messages Sent:<span id="message_count"></span></p>
+        <p>Last Message: <span id="last_message"></span></p>
       </div>
     </div>
     <script>

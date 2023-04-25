@@ -1,0 +1,52 @@
+footer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    left:0;
+    right:0;
+    padding: 1rem;
+    min-height: fit-content;
+    background: #512DA8;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+#footer_title{
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: .5rem .5rem;
+}
+
+label{
+    font-size:12px;
+    font-weight: 700;
+    margin-bottom: .25rem;
+    color: white;
+}
+
+input{
+    border-radius: .25rem;
+    border: none;
+    height: 1.5rem;
+}
+
+button{
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
