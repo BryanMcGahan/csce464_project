@@ -1,6 +1,5 @@
 <?php
 session_start();
-?>
 <?php include '../common/document_head.html'?>
 <?php include '../common/navbar.html'?>
 <!DOCTYPE html>
@@ -61,6 +60,3 @@ function updatePage(){
     </script>
   </main>
 </html>
-
-
-

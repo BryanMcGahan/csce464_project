@@ -1,58 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body.dark-mode{
-	background-color: #242424;
+body.dark-mode {
+  background-color: #242424;
 }
-.dark-mode p{
-		color: white;
-	}
-
-.dark-mode a{
-		color: white;
-	}
-.dark-mode span{
-		color: white;
-	}
-
-body{
-	font-family: 'Montserrat', sans-serif;
-	padding: 0;
-	margin: 0;
-	position: relative;
-	min-height: fit-content;
-	height: 140vh;
+.dark-mode p {
+  color: white;
 }
 
-main{
-	position: relative;
-	height: fit-content;
-	padding: 2rem 3rem 2rem 3rem;
+.dark-mode a {
+  color: white;
+}
+.dark-mode span {
+  color: white;
 }
 
-button{
-	border: none;
-	background-color: transparent;
-	padding: 0;
-	margin:0;
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  min-height: fit-content;
 }
 
-button:hover{
-	cursor: pointer;
+main {
+  position: relative;
+  height: fit-content;
+  padding: 2rem 3rem 2rem 3rem;
 }
 
-p{
-	padding: 0;
-	margin: 0;
-	color: black;
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
-a{
-	text-decoration: none;
-	color: black;
+button:hover {
+  cursor: pointer;
 }
 
-a:hover{
-	cursor:pointer;
+p {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 /**/
