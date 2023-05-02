@@ -1,0 +1,60 @@
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#page_title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+input {
+  border-radius: 0.25rem;
+  border: 1px solid;
+  min-height: fit-content;
+  height: 1.5rem;
+  max-height: 2rem;
+}
+
+#form_btn {
+  border: solid 1px #512da8;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#form_btn:hover{
+    background-color: #512da8;
+}
+
+#button_row {
+  margin-top: 2rem;
+}

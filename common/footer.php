@@ -1,45 +1,57 @@
-<?php include '../common/document_head.html' ?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="styles/footer.css">
-	</head>
-	<footer>
-		<div class="container">
-			<p id="footer_title">Register</p>
-			<form action="scripts/register.php" method="post">
-			<div class="form-row">
-					<div class="form-item">
-						<label for="">First Name:</label>
-						<input name="firstname" type="text">
-					</div>
-					<div class="form-item">
-						<label for="">Last Name:</label>
-						<input name="lastname" type="text">
-					</div>
-				</div>
-			<div class="form-row">
-					<div class="form-item">
-						<label for="">Email:</label>
-						<input name="email" type="text">
-					</div>
-				</div>
-			<div class="form-row">
-					<div class="form-item">
-						<label for="">Phone:</label>
-						<input name="phone" type="text">
-					</div>
-					<div class="form-item">
-						<label for="">Address:</label>
-						<input name="address" type="text">
-					</div>
-				</div>
-			<div class="form-row">
-				</div>
-				<div class="form-item">
-				<button>Submit</button>
-				</div>
-			</form>
-		</div>
-	</footer>
+<?php 
+session_start();
+?>
+  <head>
+    <link rel="stylesheet" href="styles/footer.css">
+    <script type="text/javascript">
+
+let request = null;
+function sendMessage(event){
+  event.preventDefault();
+  request = new XMLHttpRequest();
+  let message = document.getElementById('message').value;
+  request.open("GET", "scripts/counter.php?message=" + message, false );
+  request.onreadystatechange = handleResponse;
+  request.send(null);
+}
+
+function handleResponse(){
+  if(request.readyState == 4){
+    console.log(request);
+  }
+}
+
+function getMessage(){
+  request = new XMLHttpRequest();
+  let url = "scripts/counter.php";
+  request.open("GET", url, true);
+  request.onreadystatechange = updatePage;
+  request.send(null);
+}
+
+function updatePage(){
+  if (request.readyState == 4){
+    let split_message = request.responseText.split(',');
+    document.getElementById('message_count').innerHTML = split_message[0].trim();
+    document.getElementById('last_message').innerHTML = split_message[1].trim();
+  }
+}
+</script>
+</head>
+  <footer>
+    <div>
+      <form onsubmit="sendMessage(event)">
+        <input type="text" name="" id="message"> 
+        <button type="submit" id="submit_btn" >Send Message</button>
+      </form>
+      <div id="message_block">
+        <p id="response">Total Messages Sent:<span id="message_count"></span></p>
+        <p>Last Message: <span id="last_message"></span></p>
+      </div>
+    </div>
+    <script>
+    <!-- getMessage();  -->
+    <!-- setInterval('getMessage()', 100);  -->
+    </script>
+  </footer>
 </html>

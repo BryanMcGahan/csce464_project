@@ -4,5 +4,4 @@ if(mysqli_connect_errno() || ($db == null)){
     echo "unable to connect".mysqli_error();
     exit;
 }
-echo 'nice boooiii';
 ?>

@@ -128,17 +128,21 @@
   }
 }
 
-#chat_bubble {
+#signup_btn {
   position: fixed;
   bottom: 2%;
   right: 2%;
-  fill: white;
   padding: 1rem;
-  border-radius: 100%;
+  border-radius: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 1;
   background-color: #512da8;
+}
+
+#signup_btn p {
+    color: white;
+    font-weight: 600;
 }
