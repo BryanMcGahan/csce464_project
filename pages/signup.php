@@ -1,5 +1,4 @@
 <?php include '../common/document_head.html' ?>
-<?php include '../common/navbar.html'?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,33 +17,33 @@
                 <div class="form-row">
                     <div class="form-item">
                         <label for=""><p>First Name:</p></label>
-                        <input name="firstname" type="text" required>
+                        <input name="firstname" type="text" autocomplete="off" required>
                     </div>
                     <div class="form-item">
                         <label for=""><p>Last Name:</p></label>
-                        <input name="lastname" type="text" required>
+                        <input name="lastname" type="text" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-item">
+                        <label for=""><p>Username:</p></label>
+                        <input name="username" type="text" autocomplete="off" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-item">
                         <label for=""><p>Email:</p></label>
-                        <input name="email" type="text" id="email_input" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-item">
-                        <label for=""><p>Phone:</p></label>
-                        <input name="phone" type="text" required>
+                        <input name="email" type="text" id="email_input" autocomplete="off" required>
                     </div>
                     <div class="form-item">
-                        <label for=""><p>Address:</p></label>
-                        <input name="address" type="text" required>
+                        <label for=""><p>Password:</p></label>
+                        <input name="password" type="password" autocomplete="off" required>
                     </div>
                 </div>
                 <div class="form-row" id="button_row">
                 <div class="form-item">
                         <button id="form_btn" type="submit" >
-                            <p>Submit</p>
+                            <p>Sign Up</p>
                         </button>
                 </div>
                 </div>

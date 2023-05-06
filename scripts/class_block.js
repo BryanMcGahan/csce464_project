@@ -1,13 +1,13 @@
-let class_block = document.getElementsByClassName("class-block");
-let class_container = document.getElementById("class-container");
-let bottom_of_container = class_container.getBoundingClientRect().bottom;
-let top_of_container = class_container.getBoundingClientRect().top;
+const class_block = document.getElementsByClassName("class-block");
+const class_container = document.getElementById("class-container");
+const bottom_of_container = class_container.getBoundingClientRect().bottom;
+const top_of_container = class_container.getBoundingClientRect().top;
 
 window.onload = function () {
   for (let i = 0; i < class_block.length; i++) {
-    let block = class_block.item(i);
-    let bottom_of_block = block.getBoundingClientRect().bottom;
-    let top_of_block = block.getBoundingClientRect().top;
+    const block = class_block.item(i);
+    const bottom_of_block = block.getBoundingClientRect().bottom;
+    const top_of_block = block.getBoundingClientRect().top;
     if (
       bottom_of_container > bottom_of_block && top_of_block > top_of_container
     ) {
@@ -18,9 +18,9 @@ window.onload = function () {
 
 class_container.addEventListener("scroll", function () {
   for (let i = 0; i < class_block.length; i++) {
-    let block = class_block.item(i);
-    let bottom_of_block = block.getBoundingClientRect().bottom;
-    let top_of_block = block.getBoundingClientRect().top;
+    const block = class_block.item(i);
+    const bottom_of_block = block.getBoundingClientRect().bottom;
+    const top_of_block = block.getBoundingClientRect().top;
 
     if (
       bottom_of_container > bottom_of_block && top_of_block > top_of_container

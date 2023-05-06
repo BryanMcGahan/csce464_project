@@ -1,6 +1,7 @@
 <!--#include virtual="common/document_head.html"-->
-<!--#include virtual="common/navbar.html"-->
+<!--#include virtual="common/navbar.php"-->
 <link rel="stylesheet" href="styles/main.css" />
+
 
 <body>
   <main role="main" id="hero">
@@ -49,8 +50,18 @@
         </div>
       </div>
     </div>
-    <a id="signup_btn" href="pages/signup.php">
-        <p>Sign Up</p>
+    <a id="signup_btn" href="pages/login.php">
+      <p>Login!</p>
     </a>
   </main>
+  <script>
+    let username = window.sessionStorage.getItem('username');
+    if (username !== null) {
+      document.getElementById('signup_btn').style.display = 'none';
+    }else {
+      document.getElementById('signup_btn').style.display = 'block';
+    }
+
+
+  </script>
 </body>
