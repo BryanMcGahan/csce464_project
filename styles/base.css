@@ -9,7 +9,9 @@ body.dark-mode {
 
 .dark-mode a {
   color: white;
+  box-shadow: black;
 }
+
 .dark-mode span {
   color: white;
 }
