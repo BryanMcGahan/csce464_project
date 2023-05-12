@@ -31,7 +31,7 @@ if($result_email){
     }
 }
 
-echo "<a href=''>Back</a>";
+echo "<a href='pages/login.php'>Login</a>";
 mysqli_close($db);
 ?>
 

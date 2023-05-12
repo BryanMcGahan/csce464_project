@@ -1,5 +1,4 @@
 function validateForm() {
-
 	let form = document.getElementById("feedbackForm");
 	let email = form.email.value;
 	let message = form.message.value;
@@ -10,7 +9,6 @@ function validateForm() {
 	} else {
 		alert("The email is incorrectly formatted.")
 	}
-
 }
 
 function validateEmail(address) {

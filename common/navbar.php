@@ -65,7 +65,7 @@
 						</button>
 						<div id="hidden-subjects-list">
 							<div class="list-block">
-								<a href="pages/coding.html" class="list-link">Coding</a>
+								<a href="pages/coding.php" class="list-link">Coding</a>
 							</div>
 							<div class="list-block">
 								<a href="" class="list-link">Math</a>

@@ -4,16 +4,12 @@
     <head>
         <link rel="stylesheet" href="styles/signup.css">
         <script>
-            function validate(){
-                let email = document.getElementById("email_input").value;
-                console.log(email);
-            }
         </script>
     </head>
     <main>
         <div class="container">
             <p id="page_title">Sign Up</p>
-            <form onsubmit="validate()" action="scripts/register.php"  method="post">
+            <form  action="scripts/register.php"  method="post">
                 <div class="form-row">
                     <div class="form-item">
                         <label for=""><p>First Name:</p></label>

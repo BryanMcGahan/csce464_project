@@ -15,6 +15,7 @@ $class_id = $_GET['Id'];
       <?php 
 
         $select_info = mysqli_prepare($db, "SELECT Classes.Name, Classes.Description, Classes.img_url, ClassInfo.AuthorFirstname, ClassInfo.AuthorLastname, ClassInfo.StartDate, ClassInfo.EndDate FROM Classes LEFT JOIN ClassInfo on ClassInfo.ClassId = Classes.Id WHERE Classes.Id = ?");
+
         mysqli_stmt_bind_param($select_info, "s", $class_id);
         mysqli_stmt_execute($select_info);
         mysqli_stmt_bind_result($select_info, $name,$description,$url, $firstname, $lastname, $start, $end);
@@ -46,6 +47,7 @@ $class_id = $_GET['Id'];
         <?php
 
           $select_chapters = mysqli_prepare($db, "SELECT Chapters.Title FROM Classes LEFT JOIN ClassChapters on ClassChapters.ClassId = Classes.Id LEFT JOIN Chapters on Chapters.Id = ClassChapters.ChapterId WHERE Classes.Id = ?");
+
           mysqli_stmt_bind_param($select_chapters, "s", $class_id);
           mysqli_stmt_execute($select_chapters);
           mysqli_stmt_bind_result($select_chapters, $title);
